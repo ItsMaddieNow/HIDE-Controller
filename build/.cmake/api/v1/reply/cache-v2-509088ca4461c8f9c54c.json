@@ -199,7 +199,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/pi/Documents/HIDE-Controller/build"
+			"value" : "/home/pi/HIDE-Controller/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -739,7 +739,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/pi/Documents/HIDE-Controller"
+			"value" : "/home/pi/HIDE-Controller"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -891,7 +891,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "68"
+			"value" : "70"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1298,6 +1298,18 @@
 			"value" : "DOXYGEN_EXECUTABLE-NOTFOUND"
 		},
 		{
+			"name" : "FAMILY_MCUS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "RP2040"
+		},
+		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Python3",
 			"properties" : 
 			[
@@ -1319,7 +1331,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/pi/Documents/HIDE-Controller/build"
+			"value" : "/home/pi/HIDE-Controller/build"
 		},
 		{
 			"name" : "HIDE-Controller_SOURCE_DIR",
@@ -1331,7 +1343,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/pi/Documents/HIDE-Controller"
+			"value" : "/home/pi/HIDE-Controller"
 		},
 		{
 			"name" : "PICO_BOARD",
@@ -1487,7 +1499,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : " /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs"
+			"value" : " /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs /home/pi/pico/pico-sdk/src/rp2040/hardware_regs"
 		},
 		{
 			"name" : "PICO_DOXYGEN_PATHS",
@@ -1711,7 +1723,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/pi/Documents/HIDE-Controller/build/pico-sdk"
+			"value" : "/home/pi/HIDE-Controller/build/pico-sdk"
 		},
 		{
 			"name" : "pico_sdk_SOURCE_DIR",

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Documents/HIDE-Controller
+CMAKE_SOURCE_DIR = /home/pi/HIDE-Controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Documents/HIDE-Controller/build
+CMAKE_BINARY_DIR = /home/pi/HIDE-Controller/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/HIDE-Controller.dir/depend.make
@@ -57,22 +57,22 @@ include CMakeFiles/HIDE-Controller.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/HIDE-Controller.dir/flags.make
 
-CMakeFiles/HIDE-Controller.dir/HIDE-Controller.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
-CMakeFiles/HIDE-Controller.dir/HIDE-Controller.c.obj: ../HIDE-Controller.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/HIDE-Controller.dir/HIDE-Controller.c.obj"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/HIDE-Controller.c.obj   -c /home/pi/Documents/HIDE-Controller/HIDE-Controller.c
+CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.obj: ../src/HIDE-Controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.obj"
+	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.obj -c /home/pi/HIDE-Controller/src/HIDE-Controller.cpp
 
-CMakeFiles/HIDE-Controller.dir/HIDE-Controller.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/HIDE-Controller.c.i"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/Documents/HIDE-Controller/HIDE-Controller.c > CMakeFiles/HIDE-Controller.dir/HIDE-Controller.c.i
+CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/HIDE-Controller/src/HIDE-Controller.cpp > CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.i
 
-CMakeFiles/HIDE-Controller.dir/HIDE-Controller.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/HIDE-Controller.c.s"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/Documents/HIDE-Controller/HIDE-Controller.c -o CMakeFiles/HIDE-Controller.dir/HIDE-Controller.c.s
+CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/HIDE-Controller/src/HIDE-Controller.cpp -o CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.s
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -85,7 +85,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -98,7 +98,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpi
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i: cmake_force
@@ -109,22 +109,9 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_cla
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
-
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
-
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
-
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i: cmake_force
@@ -135,9 +122,22 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platfor
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -150,12 +150,12 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uar
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj: /home/pi/pico/pico-sdk/src/common/pico_time/time.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj   -c /home/pi/pico/pico-sdk/src/common/pico_time/time.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.i: cmake_force
@@ -168,7 +168,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: /home/pi/pico/pico-sdk/src/common/pico_time/timeout_helper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj   -c /home/pi/pico/pico-sdk/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -181,7 +181,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/timeou
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -194,7 +194,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_tim
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/sem.c.obj: /home/pi/pico/pico-sdk/src/common/pico_sync/sem.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/sem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/sem.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/sem.c.obj   -c /home/pi/pico/pico-sdk/src/common/pico_sync/sem.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -207,7 +207,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/sem.c.
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: /home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj   -c /home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -220,7 +220,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: /home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj   -c /home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -233,7 +233,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: /home/pi/pico/pico-sdk/src/common/pico_sync/critical_section.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj   -c /home/pi/pico/pico-sdk/src/common/pico_sync/critical_section.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -246,7 +246,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_sync/critic
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/datetime.c.obj: /home/pi/pico/pico-sdk/src/common/pico_util/datetime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/datetime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/datetime.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/datetime.c.obj   -c /home/pi/pico/pico-sdk/src/common/pico_util/datetime.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -259,7 +259,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/dateti
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj: /home/pi/pico/pico-sdk/src/common/pico_util/pheap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj   -c /home/pi/pico/pico-sdk/src/common/pico_util/pheap.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -272,7 +272,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/queue.c.obj: /home/pi/pico/pico-sdk/src/common/pico_util/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/queue.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/queue.c.obj   -c /home/pi/pico/pico-sdk/src/common/pico_util/queue.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
@@ -285,7 +285,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/queue.
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -298,7 +298,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -309,61 +309,9 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clo
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
-
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
-
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
-
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
-
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
-
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
-
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
-
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
-
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
-
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
-
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
-
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
-
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -376,12 +324,64 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -394,12 +394,12 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -412,17 +412,17 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i: cmake_force
@@ -435,7 +435,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -448,22 +448,22 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i: cmake_force
@@ -476,7 +476,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/f
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -489,12 +489,12 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/f
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i: cmake_force
@@ -507,17 +507,17 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_malloc/
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
 	/usr/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -c /home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i: cmake_force
@@ -530,7 +530,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standar
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i: cmake_force
@@ -543,7 +543,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standar
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -556,7 +556,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/s
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
@@ -569,7 +569,7 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_u
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i: cmake_force
@@ -580,14 +580,261 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj   -c /home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
+
 # Object files for target HIDE-Controller
 HIDE__Controller_OBJECTS = \
-"CMakeFiles/HIDE-Controller.dir/HIDE-Controller.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj" \
-"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj" \
@@ -602,12 +849,12 @@ HIDE__Controller_OBJECTS = \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/queue.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" \
-"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj" \
-"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj" \
-"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" \
-"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj" \
@@ -628,17 +875,36 @@ HIDE__Controller_OBJECTS = \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
-"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj"
 
 # External object files for target HIDE-Controller
 HIDE__Controller_EXTERNAL_OBJECTS =
 
-HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/HIDE-Controller.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -653,12 +919,12 @@ HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/co
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/common/pico_util/queue.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -680,10 +946,29 @@ HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/build.make
 HIDE-Controller.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/Documents/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX executable HIDE-Controller.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Linking CXX executable HIDE-Controller.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HIDE-Controller.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objcopy -Oihex HIDE-Controller.elf HIDE-Controller.hex
 	/usr/bin/arm-none-eabi-objcopy -Obinary HIDE-Controller.elf HIDE-Controller.bin
@@ -701,6 +986,6 @@ CMakeFiles/HIDE-Controller.dir/clean:
 .PHONY : CMakeFiles/HIDE-Controller.dir/clean
 
 CMakeFiles/HIDE-Controller.dir/depend:
-	cd /home/pi/Documents/HIDE-Controller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Documents/HIDE-Controller /home/pi/Documents/HIDE-Controller /home/pi/Documents/HIDE-Controller/build /home/pi/Documents/HIDE-Controller/build /home/pi/Documents/HIDE-Controller/build/CMakeFiles/HIDE-Controller.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/HIDE-Controller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/HIDE-Controller /home/pi/HIDE-Controller /home/pi/HIDE-Controller/build /home/pi/HIDE-Controller/build /home/pi/HIDE-Controller/build/CMakeFiles/HIDE-Controller.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/HIDE-Controller.dir/depend
 

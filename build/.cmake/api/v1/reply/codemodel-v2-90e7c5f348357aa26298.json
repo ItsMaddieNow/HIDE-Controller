@@ -28,7 +28,7 @@
 					[
 						2,
 						3,
-						67
+						69
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -54,7 +54,7 @@
 					[
 						4,
 						15,
-						64
+						66
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -237,7 +237,9 @@
 						59,
 						60,
 						61,
-						63
+						62,
+						63,
+						65
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -306,6 +308,16 @@
 					"parentIndex" : 15,
 					"projectIndex" : 1,
 					"source" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_divider"
+				},
+				{
+					"build" : "pico-sdk/src/rp2_common/hardware_exception",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 15,
+					"projectIndex" : 1,
+					"source" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_exception"
 				},
 				{
 					"build" : "pico-sdk/src/rp2_common/hardware_flash",
@@ -654,6 +666,16 @@
 					"source" : "/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart"
 				},
 				{
+					"build" : "pico-sdk/src/rp2_common/cmsis",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 15,
+					"projectIndex" : 1,
+					"source" : "/home/pi/pico/pico-sdk/src/rp2_common/cmsis"
+				},
+				{
 					"build" : "pico-sdk/src/rp2_common/tinyusb",
 					"minimumCMakeVersion" : 
 					{
@@ -707,7 +729,7 @@
 					"build" : "pico-sdk/src/rp2_common/pico_fix",
 					"childIndexes" : 
 					[
-						62
+						64
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -723,7 +745,7 @@
 					{
 						"string" : "3.13"
 					},
-					"parentIndex" : 61,
+					"parentIndex" : 63,
 					"projectIndex" : 1,
 					"source" : "/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration"
 				},
@@ -741,8 +763,8 @@
 					"build" : "pico-sdk/src/rp2040",
 					"childIndexes" : 
 					[
-						65,
-						66
+						67,
+						68
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -758,7 +780,7 @@
 					{
 						"string" : "3.13"
 					},
-					"parentIndex" : 64,
+					"parentIndex" : 66,
 					"projectIndex" : 1,
 					"source" : "/home/pi/pico/pico-sdk/src/rp2040/hardware_regs"
 				},
@@ -768,7 +790,7 @@
 					{
 						"string" : "3.13"
 					},
-					"parentIndex" : 64,
+					"parentIndex" : 66,
 					"projectIndex" : 1,
 					"source" : "/home/pi/pico/pico-sdk/src/rp2040/hardware_structs"
 				},
@@ -871,7 +893,9 @@
 						64,
 						65,
 						66,
-						67
+						67,
+						68,
+						69
 					],
 					"name" : "pico_sdk",
 					"parentIndex" : 0,
@@ -888,33 +912,33 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ELF2UF2Build::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ELF2UF2Build-Debug-270855557046a07d0a9e.json",
+					"jsonFile" : "target-ELF2UF2Build-Debug-313025abcf23c8bb1710.json",
 					"name" : "ELF2UF2Build",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "HIDE-Controller::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-HIDE-Controller-Debug-a0d8d316f81edef83e83.json",
+					"jsonFile" : "target-HIDE-Controller-Debug-0eb5f16bf5bda72f4288.json",
 					"name" : "HIDE-Controller",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 41,
+					"directoryIndex" : 42,
 					"id" : "bs2_default::@bc554eaed616d198a22d",
-					"jsonFile" : "target-bs2_default-Debug-3b5b1722a4cd4a5f0f37.json",
+					"jsonFile" : "target-bs2_default-Debug-1a9289c0e3ef9364a27c.json",
 					"name" : "bs2_default",
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 41,
+					"directoryIndex" : 42,
 					"id" : "bs2_default_bin::@bc554eaed616d198a22d",
 					"jsonFile" : "target-bs2_default_bin-Debug-b11fb8358fea69a0f9ff.json",
 					"name" : "bs2_default_bin",
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 41,
+					"directoryIndex" : 42,
 					"id" : "bs2_default_padded_checksummed_asm::@bc554eaed616d198a22d",
 					"jsonFile" : "target-bs2_default_padded_checksummed_asm-Debug-06fbd932a55c33cbe67f.json",
 					"name" : "bs2_default_padded_checksummed_asm",
@@ -926,8 +950,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/pi/Documents/HIDE-Controller/build",
-		"source" : "/home/pi/Documents/HIDE-Controller"
+		"build" : "/home/pi/HIDE-Controller/build",
+		"source" : "/home/pi/HIDE-Controller"
 	},
 	"version" : 
 	{

@@ -19,7 +19,9 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(HIDE-Controller HIDE-Controller.c )
+add_executable(HIDE-Controller src/HIDE-Controller.cpp)
+
+target_include_directories(HIDE-Controller PRIVATE include/)
 
 pico_set_program_name(HIDE-Controller "HIDE-Controller")
 pico_set_program_version(HIDE-Controller "0.1")
@@ -28,12 +30,16 @@ pico_enable_stdio_uart(HIDE-Controller 1)
 pico_enable_stdio_usb(HIDE-Controller 0)
 
 # Add the standard library to the build
-target_link_libraries(HIDE-Controller pico_stdlib hardware_adc)
+target_link_libraries(HIDE-Controller pico_stdlib)
 
 # Add any user requested libraries
 target_link_libraries(HIDE-Controller
+        hardware_adc
+        hardware_interp
         hardware_timer
         hardware_clocks
+        tinyusb_device
+        tinyusb_board
         )
 
 pico_add_extra_outputs(HIDE-Controller)

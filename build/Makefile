@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Documents/HIDE-Controller
+CMAKE_SOURCE_DIR = /home/pi/HIDE-Controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Documents/HIDE-Controller/build
+CMAKE_BINARY_DIR = /home/pi/HIDE-Controller/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Documents/HIDE-Controller/build/CMakeFiles /home/pi/Documents/HIDE-Controller/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/HIDE-Controller/build/CMakeFiles /home/pi/HIDE-Controller/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Documents/HIDE-Controller/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/HIDE-Controller/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named HIDE-Controller
-
-# Build rule for target.
-HIDE-Controller: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 HIDE-Controller
-.PHONY : HIDE-Controller
-
-# fast build rule for target.
-HIDE-Controller/fast:
-	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/build
-.PHONY : HIDE-Controller/fast
-
-#=============================================================================
 # Target rules for targets named ELF2UF2Build
 
 # Build rule for target.
@@ -135,6 +122,19 @@ ELF2UF2Build: cmake_check_build_system
 ELF2UF2Build/fast:
 	$(MAKE) -f CMakeFiles/ELF2UF2Build.dir/build.make CMakeFiles/ELF2UF2Build.dir/build
 .PHONY : ELF2UF2Build/fast
+
+#=============================================================================
+# Target rules for targets named HIDE-Controller
+
+# Build rule for target.
+HIDE-Controller: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 HIDE-Controller
+.PHONY : HIDE-Controller
+
+# fast build rule for target.
+HIDE-Controller/fast:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/build
+.PHONY : HIDE-Controller/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default
@@ -175,32 +175,464 @@ bs2_default_padded_checksummed_asm/fast:
 	$(MAKE) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build
 .PHONY : bs2_default_padded_checksummed_asm/fast
 
-HIDE-Controller.obj: HIDE-Controller.c.obj
+home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj: home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
 
-.PHONY : HIDE-Controller.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj
 
 # target to build an object file
-HIDE-Controller.c.obj:
-	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/HIDE-Controller.c.obj
-.PHONY : HIDE-Controller.c.obj
+home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.obj
 
-HIDE-Controller.i: HIDE-Controller.c.i
+home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i: home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
 
-.PHONY : HIDE-Controller.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i
 
 # target to preprocess a source file
-HIDE-Controller.c.i:
-	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/HIDE-Controller.c.i
-.PHONY : HIDE-Controller.c.i
+home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.i
 
-HIDE-Controller.s: HIDE-Controller.c.s
+home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s: home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
 
-.PHONY : HIDE-Controller.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s
 
 # target to generate assembly for a file
-HIDE-Controller.c.s:
-	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/HIDE-Controller.c.s
-.PHONY : HIDE-Controller.c.s
+home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.i: home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.s: home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.i: home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.s: home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.obj: home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.i: home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.i
+
+home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.s: home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
+.PHONY : home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.c.s
 
 home/pi/pico/pico-sdk/src/common/pico_sync/critical_section.obj: home/pi/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
@@ -562,6 +994,33 @@ home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
 	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
+home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.obj: home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj
+
+home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.i: home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.i
+
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.i
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.i
+
+home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.s: home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.s
+
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.s
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.s
+
 home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 .PHONY : home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj
@@ -903,6 +1362,33 @@ home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: home/pi
 home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
 	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+
+home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj
+
+# target to build an object file
+home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+
+home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i
+
+# target to preprocess a source file
+home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+
+home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s
+
+# target to generate assembly for a file
+home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+.PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
@@ -1246,6 +1732,33 @@ home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
 	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
+src/HIDE-Controller.obj: src/HIDE-Controller.cpp.obj
+
+.PHONY : src/HIDE-Controller.obj
+
+# target to build an object file
+src/HIDE-Controller.cpp.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.obj
+.PHONY : src/HIDE-Controller.cpp.obj
+
+src/HIDE-Controller.i: src/HIDE-Controller.cpp.i
+
+.PHONY : src/HIDE-Controller.i
+
+# target to preprocess a source file
+src/HIDE-Controller.cpp.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.i
+.PHONY : src/HIDE-Controller.cpp.i
+
+src/HIDE-Controller.s: src/HIDE-Controller.cpp.s
+
+.PHONY : src/HIDE-Controller.s
+
+# target to generate assembly for a file
+src/HIDE-Controller.cpp.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.s
+.PHONY : src/HIDE-Controller.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1253,15 +1766,63 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... HIDE-Controller"
 	@echo "... rebuild_cache"
 	@echo "... ELF2UF2Build"
+	@echo "... HIDE-Controller"
 	@echo "... bs2_default"
 	@echo "... bs2_default_bin"
 	@echo "... bs2_default_padded_checksummed_asm"
-	@echo "... HIDE-Controller.obj"
-	@echo "... HIDE-Controller.i"
-	@echo "... HIDE-Controller.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.obj"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.i"
+	@echo "... home/pi/pico/pico-sdk/lib/tinyusb/src/tusb.s"
 	@echo "... home/pi/pico/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... home/pi/pico/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... home/pi/pico/pico-sdk/src/common/pico_sync/critical_section.s"
@@ -1302,6 +1863,9 @@ help:
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s"
+	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.obj"
+	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.i"
+	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.s"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s"
@@ -1340,6 +1904,9 @@ help:
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_math.i"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_math.s"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj"
+	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj"
+	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i"
+	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i"
@@ -1378,6 +1945,9 @@ help:
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
+	@echo "... src/HIDE-Controller.obj"
+	@echo "... src/HIDE-Controller.i"
+	@echo "... src/HIDE-Controller.s"
 .PHONY : help
 
 
