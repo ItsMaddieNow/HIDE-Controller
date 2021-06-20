@@ -65,6 +65,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
   "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.obj"
+  "CMakeFiles/HIDE-Controller.dir/src/usb_descriptors.c.obj"
   "HIDE-Controller.elf"
   "HIDE-Controller.pdb"
 )

@@ -19,7 +19,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(HIDE-Controller src/HIDE-Controller.cpp)
+add_executable(HIDE-Controller src/HIDE-Controller.cpp src/usb_descriptors.c)
 
 target_include_directories(HIDE-Controller PRIVATE include/)
 

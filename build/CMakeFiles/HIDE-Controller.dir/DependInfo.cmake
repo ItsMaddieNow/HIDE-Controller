@@ -171,6 +171,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c" "/home/pi/HIDE-Controller/build/CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c" "/home/pi/HIDE-Controller/build/CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
   "/home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "/home/pi/HIDE-Controller/build/CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+  "/home/pi/HIDE-Controller/src/usb_descriptors.c" "/home/pi/HIDE-Controller/build/CMakeFiles/HIDE-Controller.dir/src/usb_descriptors.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

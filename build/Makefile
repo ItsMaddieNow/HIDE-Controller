@@ -1759,6 +1759,33 @@ src/HIDE-Controller.cpp.s:
 	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/src/HIDE-Controller.cpp.s
 .PHONY : src/HIDE-Controller.cpp.s
 
+src/usb_descriptors.obj: src/usb_descriptors.c.obj
+
+.PHONY : src/usb_descriptors.obj
+
+# target to build an object file
+src/usb_descriptors.c.obj:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/src/usb_descriptors.c.obj
+.PHONY : src/usb_descriptors.c.obj
+
+src/usb_descriptors.i: src/usb_descriptors.c.i
+
+.PHONY : src/usb_descriptors.i
+
+# target to preprocess a source file
+src/usb_descriptors.c.i:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/src/usb_descriptors.c.i
+.PHONY : src/usb_descriptors.c.i
+
+src/usb_descriptors.s: src/usb_descriptors.c.s
+
+.PHONY : src/usb_descriptors.s
+
+# target to generate assembly for a file
+src/usb_descriptors.c.s:
+	$(MAKE) -f CMakeFiles/HIDE-Controller.dir/build.make CMakeFiles/HIDE-Controller.dir/src/usb_descriptors.c.s
+.PHONY : src/usb_descriptors.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1948,6 +1975,9 @@ help:
 	@echo "... src/HIDE-Controller.obj"
 	@echo "... src/HIDE-Controller.i"
 	@echo "... src/HIDE-Controller.s"
+	@echo "... src/usb_descriptors.obj"
+	@echo "... src/usb_descriptors.i"
+	@echo "... src/usb_descriptors.s"
 .PHONY : help
 
 

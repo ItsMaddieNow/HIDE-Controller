@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/3.16.3/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/pi/ HIDE-Controller/build/elf2uf2/CMakeFiles/3.16.3/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,30 +23,30 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/3.16.3/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/3.16.3/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp
+Change Dir: /home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_c69ff/fast && make[4]: Entering directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_c69ff/fast && make[4]: Entering directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
 /usr/bin/make -f CMakeFiles/cmTC_c69ff.dir/build.make CMakeFiles/cmTC_c69ff.dir/build
-make[5]: Entering directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+make[5]: Entering directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
 Building C object CMakeFiles/cmTC_c69ff.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_c69ff.dir/testCCompiler.c.o   -c /home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp/testCCompiler.c
+/usr/bin/cc    -o CMakeFiles/cmTC_c69ff.dir/testCCompiler.c.o   -c /home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp/testCCompiler.c
 Linking C executable cmTC_c69ff
 /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c69ff.dir/link.txt --verbose=1
 /usr/bin/cc      CMakeFiles/cmTC_c69ff.dir/testCCompiler.c.o  -o cmTC_c69ff 
-make[5]: Leaving directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
-make[4]: Leaving directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+make[5]: Leaving directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+make[4]: Leaving directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp
+Change Dir: /home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_356a3/fast && make[4]: Entering directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_356a3/fast && make[4]: Entering directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
 /usr/bin/make -f CMakeFiles/cmTC_356a3.dir/build.make CMakeFiles/cmTC_356a3.dir/build
-make[5]: Entering directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+make[5]: Entering directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
 Building C object CMakeFiles/cmTC_356a3.dir/CMakeCCompilerABI.c.o
 /usr/bin/cc   -v -o CMakeFiles/cmTC_356a3.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
 Using built-in specs.
@@ -97,8 +97,8 @@ LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabih
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_356a3'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
  /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUfqoqh.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_356a3 /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_356a3.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_356a3'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
-make[5]: Leaving directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
-make[4]: Leaving directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+make[5]: Leaving directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+make[4]: Leaving directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
 
 
 
@@ -121,11 +121,11 @@ Parsed C implicit include dir info from above output: rv=done
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_356a3/fast && make[4]: Entering directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp']
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_356a3/fast && make[4]: Entering directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp']
   ignore line: [/usr/bin/make -f CMakeFiles/cmTC_356a3.dir/build.make CMakeFiles/cmTC_356a3.dir/build]
-  ignore line: [make[5]: Entering directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp']
+  ignore line: [make[5]: Entering directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp']
   ignore line: [Building C object CMakeFiles/cmTC_356a3.dir/CMakeCCompilerABI.c.o]
   ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_356a3.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
@@ -228,27 +228,27 @@ Parsed C implicit link information from above output:
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp
+Change Dir: /home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_42d03/fast && make[4]: Entering directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_42d03/fast && make[4]: Entering directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
 /usr/bin/make -f CMakeFiles/cmTC_42d03.dir/build.make CMakeFiles/cmTC_42d03.dir/build
-make[5]: Entering directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+make[5]: Entering directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_42d03.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_42d03.dir/testCXXCompiler.cxx.o -c /home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+/usr/bin/c++     -o CMakeFiles/cmTC_42d03.dir/testCXXCompiler.cxx.o -c /home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
 Linking CXX executable cmTC_42d03
 /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42d03.dir/link.txt --verbose=1
 /usr/bin/c++       CMakeFiles/cmTC_42d03.dir/testCXXCompiler.cxx.o  -o cmTC_42d03 
-make[5]: Leaving directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
-make[4]: Leaving directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+make[5]: Leaving directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+make[4]: Leaving directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp
+Change Dir: /home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_f56f8/fast && make[4]: Entering directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+Run Build Command(s):/usr/bin/make cmTC_f56f8/fast && make[4]: Entering directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
 /usr/bin/make -f CMakeFiles/cmTC_f56f8.dir/build.make CMakeFiles/cmTC_f56f8.dir/build
-make[5]: Entering directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+make[5]: Entering directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_f56f8.dir/CMakeCXXCompilerABI.cpp.o
 /usr/bin/c++    -v -o CMakeFiles/cmTC_f56f8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
@@ -303,8 +303,8 @@ LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabih
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f56f8' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
  /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cczdJ4Y6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_f56f8 /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_f56f8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f56f8' '-shared-libgcc'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
-make[5]: Leaving directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
-make[4]: Leaving directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+make[5]: Leaving directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
+make[4]: Leaving directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp'
 
 
 
@@ -333,11 +333,11 @@ Parsed CXX implicit include dir info from above output: rv=done
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make cmTC_f56f8/fast && make[4]: Entering directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp']
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_f56f8/fast && make[4]: Entering directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp']
   ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f56f8.dir/build.make CMakeFiles/cmTC_f56f8.dir/build]
-  ignore line: [make[5]: Entering directory '/home/pi/Documents/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp']
+  ignore line: [make[5]: Entering directory '/home/pi/HIDE-Controller/build/elf2uf2/CMakeFiles/CMakeTmp']
   ignore line: [Building CXX object CMakeFiles/cmTC_f56f8.dir/CMakeCXXCompilerABI.cpp.o]
   ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_f56f8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]

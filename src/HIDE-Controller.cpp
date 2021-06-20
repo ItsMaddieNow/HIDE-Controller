@@ -5,6 +5,7 @@
 #include "hardware/gpio.h"
 #include "hardware/adc.h"
 #include "tusb.h"
+#include "usb_descriptors.h"
 #include "bsp/board.h"
 
 int LeftSetterPin = 20;
@@ -36,6 +37,39 @@ class SideResults{
         bool button;
 };
 
+SideResults ReadSide(InputSide Side)
+{
+    // Set Side
+    gpio_put(LeftSetterPin, Side);
+    gpio_put(RightSetterPin, !Side);
+
+    // Read Joystick and Analog Trigger
+    SideResults CurrentSide;
+    // Joystick X Axis
+    adc_select_input(VrxAdcInput);
+    CurrentSide.Vrx = adc_read();
+    // Joystick Y Axis
+    adc_select_input(VryAdcInput);
+    CurrentSide.Vry = adc_read();
+    // Analog Trigger
+    adc_select_input(TriggerAdcPin);
+    CurrentSide.Trigger = adc_read();
+    // Joystick Button
+    CurrentSide.button = gpio_get(SwPin);
+
+    return CurrentSide;
+}
+
+void HidTask (void) {
+    const uint32_t interval_ms = 1;
+    static uint32_t start_ms = 0;
+    
+    if ( board_millis() - start_ms < interval_ms) return; // not enough time
+    start_ms += interval_ms;
+
+    tud_hid_gamepad_report(REPORT_ID_GAMEPAD,0,0,0,0,0,0,0,0);
+}
+
 int main()
 {
     stdio_init_all();
@@ -65,33 +99,10 @@ int main()
         
         SideToRead = SideToRead==Left? Right : Left;
         SideResults Results = ReadSide(SideToRead);
-        
+        HidTask();
 
         sleep_ms(500);
     }
 
     return 0;
-}
-
-SideResults ReadSide(InputSide Side)
-{
-    // Set Side
-    gpio_put(LeftSetterPin, Side);
-    gpio_put(RightSetterPin, !Side);
-
-    // Read Joystick and Analog Trigger
-    SideResults CurrentSide;
-    // Joystick X Axis
-    adc_select_input(VrxAdcInput);
-    CurrentSide.Vrx = adc_read();
-    // Joystick Y Axis
-    adc_select_input(VryAdcInput);
-    CurrentSide.Vry = adc_read();
-    // Analog Trigger
-    adc_select_input(TriggerAdcPin);
-    CurrentSide.Trigger = adc_read();
-    // Joystick Button
-    CurrentSide.button = gpio_get(SwPin);
-
-    return CurrentSide;
 }
