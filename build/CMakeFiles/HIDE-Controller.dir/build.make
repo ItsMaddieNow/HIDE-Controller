@@ -580,22 +580,9 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_u
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
-
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
-
-CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s"
-	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
-
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.i: cmake_force
@@ -605,6 +592,19 @@ CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_int
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.s"
 	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.s
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/HIDE-Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj   -c /home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c > CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
+
+CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s"
+	/bin/arm-none-eabi-gcc-7.3.1 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c -o CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/HIDE-Controller.dir/flags.make
 CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: /home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
@@ -889,8 +889,8 @@ HIDE__Controller_OBJECTS = \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj" \
-"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj" \
+"CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj" \
 "CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj" \
@@ -960,8 +960,8 @@ HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj
+HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 HIDE-Controller.elf: CMakeFiles/HIDE-Controller.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj

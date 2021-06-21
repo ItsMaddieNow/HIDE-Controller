@@ -514,11 +514,11 @@
 				},
 				{
 					"backtrace" : 11,
-					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/include"
+					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/include"
 				},
 				{
 					"backtrace" : 11,
-					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/include"
+					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/include"
 				},
 				{
 					"backtrace" : 11,
@@ -905,11 +905,11 @@
 				},
 				{
 					"backtrace" : 11,
-					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/include"
+					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/include"
 				},
 				{
 					"backtrace" : 11,
-					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/include"
+					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/include"
 				},
 				{
 					"backtrace" : 11,
@@ -1345,11 +1345,11 @@
 				},
 				{
 					"backtrace" : 11,
-					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/include"
+					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/include"
 				},
 				{
 					"backtrace" : 11,
-					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/include"
+					"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/include"
 				},
 				{
 					"backtrace" : 11,
@@ -2597,13 +2597,13 @@
 		{
 			"backtrace" : 11,
 			"compileGroupIndex" : 1,
-			"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c",
+			"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 11,
 			"compileGroupIndex" : 1,
-			"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c",
+			"path" : "/home/pi/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c",
 			"sourceGroupIndex" : 0
 		},
 		{

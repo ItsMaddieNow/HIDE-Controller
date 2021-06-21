@@ -34,10 +34,10 @@ target_link_libraries(HIDE-Controller pico_stdlib)
 
 # Add any user requested libraries
 target_link_libraries(HIDE-Controller
-        hardware_adc
         hardware_interp
         hardware_timer
         hardware_clocks
+        hardware_adc
         tinyusb_device
         tinyusb_board
         )
