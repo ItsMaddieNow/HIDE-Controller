@@ -40,7 +40,7 @@ target_link_libraries(HIDE-Controller
         hardware_adc
         tinyusb_device
         tinyusb_board
+        #tinyusb_common
         )
 
 pico_add_extra_outputs(HIDE-Controller)
-

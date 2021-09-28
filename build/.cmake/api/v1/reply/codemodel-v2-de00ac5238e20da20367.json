@@ -912,14 +912,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ELF2UF2Build::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ELF2UF2Build-Debug-313025abcf23c8bb1710.json",
+					"jsonFile" : "target-ELF2UF2Build-Debug-3a69efa32ee6a60b5fab.json",
 					"name" : "ELF2UF2Build",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "HIDE-Controller::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-HIDE-Controller-Debug-5b97154a6f9aea39ec29.json",
+					"jsonFile" : "target-HIDE-Controller-Debug-eea6728fc73b2a5715bb.json",
 					"name" : "HIDE-Controller",
 					"projectIndex" : 0
 				},
