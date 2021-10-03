@@ -46,7 +46,7 @@ int DPadButtonPinDown = 0;
 int DPadButtonPinLeft = 0;
 int DPadButtonPinRight = 0;
 
-static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
+//static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
 
 class SideResults{
     public:
@@ -82,7 +82,7 @@ int64_t alarm_callback(alarm_id_t id, void *user_data) {
 
 SideResults ReadSide(InputSide Side);
 void hid_task(void);
-void switch_setup(void);
+void switch_setup(int SwitchPin);
 
 int main(void)
 {
