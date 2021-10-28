@@ -88,26 +88,26 @@ int main(void)
 {
     stdio_init_all();
 
-    printf("DEBUG: starting up HID device...\n");
+    puts("DEBUG: starting up HID device...\n");
 
     board_init();
     tusb_init();
 
-    switch_setup(AButtonPin);
-    switch_setup(BButtonPin);
-    switch_setup(XButtonPin);
-    switch_setup(YButtonPin);
+    //switch_setup(AButtonPin);
+    //switch_setup(BButtonPin);
+    //switch_setup(XButtonPin);
+    //switch_setup(YButtonPin);
+    //
+    //switch_setup(LeftBumperButtonPin);
+    //switch_setup(RightBumperButtonPin);
 
-    switch_setup(LeftBumperButtonPin);
-    switch_setup(RightBumperButtonPin);
+    //switch_setup(StartButtonPin);
+    //switch_setup(SelectButtonPin);
 
-    switch_setup(StartButtonPin);
-    switch_setup(SelectButtonPin);
-
-    switch_setup(DPadButtonPinUp);
-    switch_setup(DPadButtonPinDown);
-    switch_setup(DPadButtonPinLeft);
-    switch_setup(DPadButtonPinRight);
+    //switch_setup(DPadButtonPinUp);
+    //switch_setup(DPadButtonPinDown);
+    //switch_setup(DPadButtonPinLeft);
+    //switch_setup(DPadButtonPinRight);
 
     // Interpolator example code
     //interp_config cfg = interp_default_config();
@@ -130,9 +130,10 @@ int main(void)
     gpio_set_dir(RightSetterPin,GPIO_OUT);
 
     adc_init();
+    adc_gpio_init(TriggerPin);
     adc_gpio_init(VrxPin);
     adc_gpio_init(VryPin);
-    
+
     printf("DEBUG: HID Device initialized\n");
 
     // Enter Loop
@@ -143,9 +144,11 @@ int main(void)
         SideResults Results = ReadSide(SideToRead);
         printf("%s:\n  X-Axis: %u\n  Y-Axis: %u\n  Trigger: %u\n  Button Pressed: %s\n",getSideName(SideToRead),Results.Vrx,Results.Vry,Results.Trigger,getButtonState(Results.Button));
         
-        tud_task();
+        //tud_task();
 
-        hid_task();
+        //hid_task();
+
+        sleep_ms(250);
     }
 
     return 0;
