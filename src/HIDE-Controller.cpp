@@ -14,8 +14,10 @@
 
 #include "usb_descriptors.h"
 
-int LeftSetterPin = 20;
-int RightSetterPin = 21;
+int LeftSetterPinPos = 20;
+int RightSetterPinPos = 21;
+int LeftSetterPinGnd = 18;
+int RightSetterPinGnd = 19;
 
 int SwPin = 22;
 
@@ -30,21 +32,21 @@ int TriggerAdcPin = 2;
 
 enum InputSide {Left, Right};
 
-int AButtonPin = 0;
-int BButtonPin = 0;
-int XButtonPin = 0;
-int YButtonPin = 0;
+int AButtonPin = 13;
+int BButtonPin = 10;
+int XButtonPin = 11;
+int YButtonPin = 12;
 
-int LeftBumperButtonPin = 0;    //TL
-int RightBumperButtonPin = 0;   //TR
+int LeftBumperButtonPin = 2;    //TL
+int RightBumperButtonPin = 3;   //TR
 
-int StartButtonPin = 0;
-int SelectButtonPin = 0;
+int StartButtonPin = 8;
+int SelectButtonPin = 9;
 
-int DPadButtonPinUp = 0;
-int DPadButtonPinDown = 0;
-int DPadButtonPinLeft = 0;
-int DPadButtonPinRight = 0;
+int DPadButtonPinUp = 4;
+int DPadButtonPinDown = 7;
+int DPadButtonPinLeft = 5;
+int DPadButtonPinRight = 6;
 
 //static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
 
@@ -93,21 +95,21 @@ int main(void)
     board_init();
     tusb_init();
 
-    //switch_setup(AButtonPin);
-    //switch_setup(BButtonPin);
-    //switch_setup(XButtonPin);
-    //switch_setup(YButtonPin);
-    //
-    //switch_setup(LeftBumperButtonPin);
-    //switch_setup(RightBumperButtonPin);
+    switch_setup(AButtonPin);
+    switch_setup(BButtonPin);
+    switch_setup(XButtonPin);
+    switch_setup(YButtonPin);
+    
+    switch_setup(LeftBumperButtonPin);
+    switch_setup(RightBumperButtonPin);
 
-    //switch_setup(StartButtonPin);
-    //switch_setup(SelectButtonPin);
+    switch_setup(StartButtonPin);
+    switch_setup(SelectButtonPin);
 
-    //switch_setup(DPadButtonPinUp);
-    //switch_setup(DPadButtonPinDown);
-    //switch_setup(DPadButtonPinLeft);
-    //switch_setup(DPadButtonPinRight);
+    switch_setup(DPadButtonPinUp);
+    switch_setup(DPadButtonPinDown);
+    switch_setup(DPadButtonPinLeft);
+    switch_setup(DPadButtonPinRight);
 
     // Interpolator example code
     //interp_config cfg = interp_default_config();
@@ -124,10 +126,13 @@ int main(void)
     gpio_set_dir(SwPin, GPIO_IN);
     gpio_pull_up(SwPin);
 
-    gpio_init(LeftSetterPin);
-    gpio_init(RightSetterPin);
-    gpio_set_dir(LeftSetterPin,GPIO_OUT);
-    gpio_set_dir(RightSetterPin,GPIO_OUT);
+    gpio_init(LeftSetterPinPos);
+    gpio_init(RightSetterPinPos);
+    gpio_init(LeftSetterPinGnd);
+    gpio_init(RightSetterPinGnd);
+
+    gpio_set_dir(LeftSetterPinPos,GPIO_OUT);
+    gpio_set_dir(RightSetterPinPos,GPIO_OUT);
 
     adc_init();
     adc_gpio_init(TriggerPin);
@@ -138,15 +143,23 @@ int main(void)
 
     // Enter Loop
     InputSide SideToRead = Left;
+
+    int8_t LastLeftStickX = 0;
+    int8_t LastLeftStickY = 0;
+    int8_t LastRightStickX = 0;
+    int8_t LastRightStickY = 0;
+    int8_t LastLeftTrigger = 0;
+    int8_t LastRightTrigger = 0;
+
     while (true)
     {
-        SideToRead = SideToRead == Left ? Right : Left;
-        SideResults Results = ReadSide(SideToRead);
-        printf("%s:\n  X-Axis: %u\n  Y-Axis: %u\n  Trigger: %u\n  Button Pressed: %s\n",getSideName(SideToRead),Results.Vrx,Results.Vry,Results.Trigger,getButtonState(Results.Button));
+        //SideToRead = SideToRead == Left ? Right : Left;
+        //SideResults Results = ReadSide(SideToRead);
+        //printf("%s:\n  X-Axis: %u\n  Y-Axis: %u\n  Trigger: %u\n  Button Pressed: %s\n",getSideName(SideToRead),Results.Vrx,Results.Vry,Results.Trigger,getButtonState(Results.Button));
         
-        //tud_task();
+        tud_task();
 
-        //hid_task();
+        hid_task();
 
         sleep_ms(250);
     }
@@ -157,8 +170,23 @@ int main(void)
 SideResults ReadSide(InputSide Side)
 {
     // Set Side
-    gpio_put(LeftSetterPin, Side);
-    gpio_put(RightSetterPin, !Side);
+    if (Side){
+        gpio_set_dir(LeftSetterPinPos,GPIO_OUT);
+        gpio_put(LeftSetterPinPos,1);
+        gpio_set_dir(LeftSetterPinGnd,GPIO_OUT);
+        gpio_put(LeftSetterPinGnd,0);
+
+        gpio_set_dir(RightSetterPinPos,GPIO_IN);
+        gpio_set_dir(RightSetterPinGnd,GPIO_IN);
+    } else {
+        gpio_set_dir(RightSetterPinPos,GPIO_OUT);
+        gpio_put(RightSetterPinPos,1);
+        gpio_set_dir(RightSetterPinGnd,GPIO_OUT);
+        gpio_put(RightSetterPinGnd,0);
+
+        gpio_set_dir(LeftSetterPinPos,GPIO_IN);
+        gpio_set_dir(LeftSetterPinGnd,GPIO_IN);
+    }
 
     // Read Joystick and Analog Trigger
     SideResults CurrentSide;
@@ -205,6 +233,105 @@ void hid_task(void)
         {
             .x = 0, .y = 0, .z = 0, .rz = 0, .rx = 0, .ry = 0, .hat = 0, .buttons = 0
         };
+
+        int DPadX = gpio_get(DPadButtonPinRight)? 1:0 - gpio_get(DPadButtonPinLeft)? 1:0; 
+        int DPadY = gpio_get(DPadButtonPinUp)? 1:0 - gpio_get(DPadButtonPinDown)? 1:0;
+
+        switch DPadX {
+            case 1:
+                switch DPadY{
+                    case 1:
+                        report.hat = GAMEPAD_HAT_UP_RIGHT;
+                        break;
+                    case 0:
+                        report.hat = GAMEPAD_HAT_RIGHT
+                        break;
+                    case -1:
+                        report.hat = GAMEPAD_HAT_DOWN_RIGHT;
+                        break;
+                }
+                break;
+            case 0;
+                switch DPadY{
+                    case 1:
+                        report.hat = GAMEPAD_HAT_UP;
+                        break;
+                    case -1:
+                        report.hat = GAMEPAD_HAT_DOWN
+                        break;
+                }
+                break;
+            case -1;
+                switch DPadY{
+                    case 1:
+                        report.hat = GAMEPAD_HAT_UP_LEFT;
+                        break;
+                    case 0:
+                        report.hat = GAMEPAD_HAT_RIGHT
+                        break;
+                    case -1:
+                        report.hat = GAMEPAD_HAT_DOWN_LEFT;
+                        break;
+                }
+                break;
+        }
+        
+        if (gpio_get(AButtonPin)){
+            report.buttons += GAMEPAD_BUTTON_A;
+        }
+        if (gpio_get(BButtonPin)){
+            report.buttons += GAMEPAD_BUTTON_B;
+        }
+        if (gpio_get(XButtonPin)){
+            report.buttons += GAMEPAD_BUTTON_X;
+        }
+        if (gpio_get(YButtonPin)){
+            report.buttons += GAMEPAD_BUTTON_Y;
+        }
+
+        if (gpio_get(LeftBumperButtonPin)){
+            report.buttons += GAMEPAD_BUTTON_TL;
+        }
+        if (gpio_get(RightBumperButtonPin)){
+            report.buttons += GAMEPAD_BUTTON_TR;
+        }
+
+        if (gpio_get(StartButtonPin)){
+            report.buttons += GAMEPAD_BUTTON_START;
+        }
+        if (gpio_get(SelectButtonPin)){
+            report.buttons += GAMEPAD_BUTTON_SELECT;
+        }
+
+        SideResults LeftResults = ReadSide(Left);
+        SideResults RightResults = ReadSide(Right);
+
+        if (LeftResults.Button) {
+            report.buttons += GAMEPAD_BUTTON_THUMBL;
+        }
+        if (RightResults.Button) {
+            report.buttons += GAMEPAD_BUTTON_THUMBR;
+        }
+        
+        report.x = (LeftResults.Vrx-LastLeftStickX)/4;
+        LastLeftStickX = LeftResults.Vrx;
+
+        report.y = (LeftResults.Vry-LastLeftStickY)/4;
+        LastLeftStickY = LeftResults.Vry;
+
+        report.rx = (LeftResults.Trigger/2-LastLeftTrigger);
+        LastLeftTrigger= LeftResults.Trigger/2;
+
+        report.z = (RightResults.Vrx-LastRightStickX)/4;
+        LastRightStickX = RightResults.Vrx;
+
+        report.rz = (RightResults.Vry-LastRightStickY)/4;
+        LastRightStickY = RightResults.Vry;
+
+        report.ry = (RightResults.Trigger/2-LastRightTrigger);
+        LastRightTrigger= RightResults.Trigger/2;
+
+
         tud_hid_report(REPORT_ID_GAMEPAD, &report, sizeof(report));
     }
 }
