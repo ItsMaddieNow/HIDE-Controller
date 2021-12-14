@@ -237,9 +237,9 @@ void hid_task(void)
         int DPadX = gpio_get(DPadButtonPinRight)? 1:0 - gpio_get(DPadButtonPinLeft)? 1:0; 
         int DPadY = gpio_get(DPadButtonPinUp)? 1:0 - gpio_get(DPadButtonPinDown)? 1:0;
 
-        switch DPadX {
+        switch (DPadX)  {
             case 1:
-                switch DPadY{
+                switch (DPadY) {
                     case 1:
                         report.hat = GAMEPAD_HAT_UP_RIGHT;
                         break;
@@ -252,7 +252,7 @@ void hid_task(void)
                 }
                 break;
             case 0;
-                switch DPadY{
+                switch (DPadY) {
                     case 1:
                         report.hat = GAMEPAD_HAT_UP;
                         break;
@@ -262,7 +262,7 @@ void hid_task(void)
                 }
                 break;
             case -1;
-                switch DPadY{
+                switch (DPadY) {
                     case 1:
                         report.hat = GAMEPAD_HAT_UP_LEFT;
                         break;
